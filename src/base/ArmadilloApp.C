@@ -28,6 +28,7 @@ ArmadilloApp::~ArmadilloApp()
 {
 }
 
+extern "C" void ArmadilloApp__registerApps() { ArmadilloApp::registerApps(); }
 void
 ArmadilloApp::registerApps()
 {
