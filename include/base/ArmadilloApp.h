@@ -11,7 +11,7 @@ InputParameters validParams<ArmadilloApp>();
 class ArmadilloApp : public MooseApp
 {
 public:
-  ArmadilloApp(const std::string & name, InputParameters parameters);
+  ArmadilloApp(InputParameters parameters);
   virtual ~ArmadilloApp();
 
   static void registerApps();

@@ -10,10 +10,9 @@ InputParameters validParams<ArmadilloApp>()
   return params;
 }
 
-ArmadilloApp::ArmadilloApp(const std::string & name, InputParameters parameters) :
-    MooseApp(name, parameters)
+ArmadilloApp::ArmadilloApp(InputParameters parameters) :
+    MooseApp(parameters)
 {
-  srand(processor_id());
 
   Moose::registerObjects(_factory);
   ModulesApp::registerObjects(_factory);
